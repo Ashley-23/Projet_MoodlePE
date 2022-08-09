@@ -66,7 +66,6 @@ if (isloggedin() == false) {
 		<title>RegistrationForm_v1 by Colorlib</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="icon" href="http://localhost:8080/moodlepe/pix/i/moodle_host.png">
 		<!-- MATERIAL DESIGN ICONIC FONT -->
 		<link rel="stylesheet" href="register/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 

@@ -479,7 +479,7 @@ if (isset($_POST['userfirstname']) || isset($_POST['userlastname']) || isset($_P
 		//CREE UNE NOUVELLE INSTANCE DE COHORT_MEMBERS 
 		$cohort_members = new stdClass();
 
-		$cohort_members->cohortid = $verify_cohort_id;
+		$cohort_members->cohortid = $verify_user_id;
 		$cohort_members->userid = $verify_user_id;
 		$cohort_members->timeadded = time();
 
