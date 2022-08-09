@@ -1,0 +1,3 @@
+Pour afficher mon site vitrinne, créez un fichier  «.php"» et recopiez y le code du fichier index.php situer à la racine du dossier Moodle 
+exemple : si votre projet s'appelle « monmoodle » le fichier index sera accessible avec ce chemin : « monmoodle/index.php »
+Maintenant remplacer le contenu du fichier « MonMoodle/index.php » par celui de « MonMoodle/local/moodlepe/showcase/index.php »

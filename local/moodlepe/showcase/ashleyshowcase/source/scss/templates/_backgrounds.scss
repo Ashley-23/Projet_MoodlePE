@@ -1,0 +1,59 @@
+.bg-1 {
+   background: url("../images/bg/banner-1.jpg") no-repeat 50% 50%;
+   background-size: cover;
+}
+
+.bg-2 {
+   background: url("../images/bg/contact-bg-min-1.jpg") 50% 50%;
+   background-size: cover;
+}
+
+.bg-4 {
+   background: url("../images/bg/about-modern-img-1.jpg") 50% 50%;
+   background-size: cover;
+}
+
+@include mobile {
+   .cta-section {
+      .bg-2 {
+         background: #eee;
+         width: 100% !important;
+      }
+   }
+}
+
+@include mobile-xs {
+   .cta-section {
+      padding: 40px 0px;
+   }
+   .cta-section {
+      .bg-2 {
+         background: #eee;
+         width: 100% !important;
+      }
+   }
+}
+
+@include tablet {
+   .cta-section {
+      padding: 40px 0px;
+   }
+   .cta-section {
+      .bg-2 {
+         background: #eee;
+         width: 100% !important;
+      }
+   }
+}
+
+@include desktop {
+   .cta-section {
+      padding: 40px 0px;
+   }
+   .cta-section {
+      .bg-2 {
+         background: #eee;
+         width: 100% !important;
+      }
+   }
+}

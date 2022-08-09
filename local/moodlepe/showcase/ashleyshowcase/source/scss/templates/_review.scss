@@ -1,0 +1,44 @@
+// Testimonial Section
+.testimonial {
+   @include desktop {
+      background-image: none;
+      background-color: #f5f5f5;
+   }
+}
+
+.testimonial-item {
+   padding: 50px 30px;
+   p {
+      font-size: 18px;
+      line-height: 32px;
+   }
+}
+
+.slick-slide {
+   &:focus,
+   a {
+      outline: none;
+   }
+}
+
+.shadow-md-2 {
+   box-shadow: 0 18px 50px rgba(0, 0, 0, 0.07);
+}
+
+@include mobile-xs {
+   .testimonial-item .testimonial-item-content {
+      padding-left: 0px;
+      padding-top: 30px;
+   }
+}
+
+@include mobile {
+   .testimonial-item .testimonial-item-content {
+      padding-left: 0px;
+      padding-top: 30px;
+   }
+}
+
+.testimonial-author {
+   margin-top: 20px;
+}

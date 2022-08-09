@@ -1,0 +1,19 @@
+// Counter Section 
+.counter {
+   padding: 130px 0px;
+}
+
+.counter-item {
+   .counter-stat {
+      font-size: 50px;
+   }
+   p {
+      margin-bottom: 0px;
+   }
+}
+
+.bg-counter {
+   background: url("../images/bg/banner-1.jpg")no-repeat;
+   background-size: cover;
+   @extend .overly-3;
+}

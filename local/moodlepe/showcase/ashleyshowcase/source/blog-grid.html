@@ -1,0 +1,27 @@
+@@include('header.htm')
+@@include('blocks/navigation.htm')
+@@include('blocks/page-title.htm', {
+"title": "Blog articles",
+"description": "Our blog"
+})
+<section class="section blog-wrap">
+    <div class="container">
+        @@include('blocks/blog-posts.htm')
+
+        <div class="columns mt-5 is-justify-content-center">
+            <div class="column is-8-widescreen has-text-centered">
+            	<nav class="post-navigation">
+                    <a class="current" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#"><i class="ti-angle-right"></i></a>
+	            </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('blocks/footer.htm')
+@@include('footer.htm')

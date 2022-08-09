@@ -1,0 +1,81 @@
+// Pricing Section
+.hero-img {
+   background: url("../images/bg/banner-1.jpg");
+   position: absolute;
+   content: "";
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   @extend .overly-3;
+}
+
+.bg-absolute {
+   position: absolute;
+   content: "";
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+}
+
+.h70 {
+   height: 55%;
+}
+
+.lh-45 {
+   line-height: 38px;
+}
+
+.pricing-header h1 {
+   font-size: 75px;
+   line-height: initial !important;
+   small {
+      font-size: 30%;
+   }
+}
+
+.pricing .btn-solid-border {
+   border-color: $primary-color;
+   color: $black;
+   &:Hover {
+      background: $primary-color;
+      color: $light;
+   }
+}
+
+.plan {
+   background-color: #f1f3f7;
+   border-radius: 50em;
+   line-height: 1.5em;
+   font-weight: 400;
+   color: #2d3136;
+   display: inline-block;
+   padding: 4px 16px;
+}
+
+.pricing .card {
+   transition: all .35s ease;
+   transform: translateY(0px);
+   h1 {
+      transition: all .35s ease;
+   }
+   .border-bottom {
+      border-color: rgba(0, 0, 0, 0.07)!important;
+   }
+   &:hover {
+      transform: translateY(10px);
+      h1 {
+         color: $primary-color;
+      }
+   }
+}
+
+.shadow-sm-2 {
+   box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.07000000000000001);
+}
+
+.pricing-header.active span {
+   background-color: $primary-color;
+   color: $light;
+}
