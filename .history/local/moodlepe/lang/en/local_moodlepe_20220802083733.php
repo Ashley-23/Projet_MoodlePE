@@ -26,10 +26,3 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'moodlepe';
-$string['name'] = 'Utilisateurs';
-$string['username'] = 'Nom d\'utilisateur';
-$string['firstname'] = 'Prénom';
-$string['lastname'] = 'Nom';
-$string['email'] = 'Email';
-$string['password'] = 'Mot de passe';
-$string['verify_password'] = 'Confirmez le mot de passe';

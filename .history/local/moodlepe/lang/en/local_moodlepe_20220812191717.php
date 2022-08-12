@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'moodlepe';
+
 $string['name'] = 'Utilisateurs';
 $string['username'] = 'Nom d\'utilisateur';
 $string['firstname'] = 'Prénom';
