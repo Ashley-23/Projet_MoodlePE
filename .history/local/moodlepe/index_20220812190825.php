@@ -164,7 +164,7 @@ if (isset($roleid)) {
 
         <?php ?>
 
-        <form action="/moodlepe/local/moodlepe/user/add.php">
+        <form action="/moodle4test/local/moodlepe/user/add.php">
             <input type="submit" value="Ajouter un utilisateur">
         </form>
 
@@ -234,7 +234,7 @@ if (isset($roleid)) {
         <script type="text/javascript">
             var check = function(username) {
                 if (confirm('Voulez-vous vraiment supprimer l\'utilisateur « ' + username + ' » ?')) {
-                    window.location.href = "/moodlepe/local/moodlepe/user/delete.php?username=" + username;
+                    window.location.href = "/moodle4test/local/moodlepe/user/delete.php?username=" + username;
                 } else {
                     return false;
                 };
@@ -243,7 +243,7 @@ if (isset($roleid)) {
 
             var getid = function(username) {
                 // return id;
-                window.location.href = "/moodlepe/local/moodlepe/user/update.php?username=" + username;
+                window.location.href = "/moodle4test/local/moodlepe/user/update.php?username=" + username;
             };
         </script>
         <!-- </form> -->
@@ -267,13 +267,13 @@ if (isset($roleid)) {
     } else {
         //ON LE REDIRIGE
 
-        header("Location: /moodlepe/index.php");
+        header("Location: /moodle4test/index.php");
         die();
     }
 } else {
     // ON LE REDIRIGE
 
-    header("Location: /moodlepe/index.php");
+    header("Location: /moodle4test/index.php");
     die();
 }
 

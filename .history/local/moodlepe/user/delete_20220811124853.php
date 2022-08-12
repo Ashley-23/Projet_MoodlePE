@@ -101,8 +101,8 @@ if (isset($_GET['username'])) {
 
     // ****************************************************************************************************
 
-    header("Location: /moodlepe/local/moodlepe/index.php?suppr=ok");
+    header("Location: /moodle4test/local/moodlepe/index.php?suppr=ok");
     die();
 } else {
-    header("Location: /moodlepe/local/moodlepe/index.php?supprerreur=ok");
+    header("Location: /moodle4test/local/moodlepe/index.php?supprerreur=ok");
 }

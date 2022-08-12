@@ -1,4 +1,3 @@
-
 <?php
 // This file is part of Moodle - https://moodle.org/
 //
@@ -50,21 +49,6 @@ $mysql = new mysqli($dbhostname, $dbusername, $dbpassword, $dbname, $dbport);
 
 $authuserid = $USER->id;
 
-$timecreated = time();
-
-// RECUPERER L'ID DE LA COHORTE DE L'UTILISATEUR CONNECTE
-
-$cohort_check = $mysql->query("SELECT * FROM mdl_cohort c JOIN mdl_cohort_members m ON c.id = m.cohortid WHERE m.userid = '$authuserid'", MYSQLI_USE_RESULT);
-
-while ($row = $cohort_check->fetch_assoc()) {
-    $cohortid =  $row['cohortid'];
-    $cohortname =  $row['name'];
-}
-
-
-
-// echo " nom cohorte : " . $cohortname . " et idcohorte : " . $cohortid;
-// die();
 
 
 if (isset($_GET['username'])) {
@@ -80,29 +64,19 @@ if (isset($_GET['username'])) {
 
     while ($row = $utilisateur->fetch_assoc()) {
         $userid =  $row['id'];
-        $userlastname =  $row['lastname'];
-        $userfirstname =  $row['firstname'];
-        $userpassword =  $row['password'];
-        $userusername =  $row['username'];
-        $useremail =  $row['email'];
     }
 
-    //AJOUTE L'UTILISATEUR DANS NOTRE TABLE mdl_local_moodlepe_suppr
+    echo " Le nom de la personne a modifié est : " . $username . " et mon id est : " . $userid;
 
-    $add = $mysql->query("INSERT INTO mdl_local_moodlepe_suppr(username,firstname,lastname,email,password,enterprise,timecreated,active,suppr,suppr_user_id, userid) VALUES ('$userusername','$userfirstname','$userlastname','$useremail','$userpassword','$cohortname','$timecreated','t','t','$authuserid', '$userid')", MYSQLI_USE_RESULT);
+    echo "</br> Le nom de l'utilisateur connecté est : " . $authuserid;
 
+    // $users = array();
+    // while ($row = $userlist->fetch_assoc()) {
+    //     $users[] = array('id' => $row['id'], 'nom' => $row['lastname'], 'prenom' => $row['firstname'], 'username' => $row['username'], 'email' => $row['email'], 'entreprise' => $row['name']);
+    // }
 
-
-    // *************************************************************************************************
-    // SUPPRIME L'UTILISATEUR DE LA COHORTE 
-
-    $deluser = $mysql->query("DELETE FROM mdl_cohort_members WHERE cohortid='$cohortid' and userid ='$userid'", MYSQLI_USE_RESULT);
-
-
-    // ****************************************************************************************************
-
-    header("Location: /moodlepe/local/moodlepe/index.php?suppr=ok");
-    die();
+    // header("Location: /moodle4test/local/moodlepe/index.php?mod=ok");
+    // die();
 } else {
-    header("Location: /moodlepe/local/moodlepe/index.php?supprerreur=ok");
+    header("Location: /moodle4test/local/moodlepe/index.php?moderreur=ok");
 }
