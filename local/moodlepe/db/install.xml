@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<XMLDB PATH="local/moodlepe/db" VERSION="20220806" COMMENT="XMLDB file for Moodle local/moodlepe"
+<XMLDB PATH="local/moodlepe/db" VERSION="20220811" COMMENT="XMLDB file for Moodle local/moodlepe"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
 >
@@ -18,6 +18,25 @@
         <FIELD NAME="offreid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="nomoffre" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
         <FIELD NAME="prixoffre" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="local_moodlepe_suppr" COMMENT="Default comment for the table, please edit me">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="username" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="firstname" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="lastname" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="email" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="password" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="enterprise" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="active" TYPE="char" LENGTH="1" NOTNULL="true" DEFAULT="t" SEQUENCE="false"/>
+        <FIELD NAME="suppr" TYPE="char" LENGTH="1" NOTNULL="true" DEFAULT="f" SEQUENCE="false"/>
+        <FIELD NAME="suppr_user_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
