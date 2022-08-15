@@ -359,7 +359,7 @@ echo $OUTPUT->header();
                         btn-primary
                         
                     
-                    " name="submitbutton" id="id_submitbutton" value="Voir la liste" data-initial-value="Voir la liste">
+                    " name="submitbutton" id="id_submitbutton" value="Voir " data-initial-value="Voir ">
                     </span>
                     <div class="form-control-feedback invalid-feedback" id="id_error_submitbutton">
 
