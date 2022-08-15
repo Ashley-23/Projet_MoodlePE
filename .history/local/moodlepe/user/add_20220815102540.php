@@ -332,50 +332,11 @@ echo $OUTPUT->header();
 
 
 
+<!-- ************************************************* RET -->
 
 
 
-
-
-
-
-
-
-<!-- ************************************************* RETOUR A LA PAGE D'ACCUEIL ( LISTE ) ************************************** -->
-
-<!-- *********************************** RESTAURER UN UTILISATEUR EXISTANT****************************************** -->
-<!-- <form action="/moodlepe/local/moodlepe/user/add.php"> -->
-<form action="/moodlepe/local/moodlepe/index.php">
-    <!-- <input type="submit" value="Restaurer un utilisateur"> -->
-
-
-    <div class="col-md-9 form-inline align-items-start felement" data-fieldtype="group" id="yui_3_17_2_1_1660412984554_753">
-        <fieldset class="w-100 m-0 p-0 border-0" id="yui_3_17_2_1_1660412984554_752">
-            <div class="d-flex flex-wrap align-items-center" id="yui_3_17_2_1_1660412984554_751">
-
-                <div class="form-group  fitem  " id="yui_3_17_2_1_1660412984554_750">
-                    <span data-fieldtype="submit" id="yui_3_17_2_1_1660412984554_749">
-                        <input type="submit" class="btn
-                        btn-primary
-                        
-                    
-                    " name="submitbutton" id="id_submitbutton" value="Retourner à la page d'accueil" data-initial-value="Retourner à la page d'accueil">
-                    </span>
-                    <div class="form-control-feedback invalid-feedback" id="id_error_submitbutton">
-
-                    </div>
-                </div>
-
-        </fieldset>
-        <div class="form-control-feedback invalid-feedback" id="fgroup_id_error_buttonar">
-
-        </div>
-    </div>
-</form>
-<!-- *********************************** FIN RESTAURER UN UTILISATEUR EXISTANT****************************************** -->
-
-
-<!-- ************************************************* RETOUR A LA PAGE D'ACCUEIL ( LISTE ) ************************************** -->
+<!-- ************************************************* RET -->
 
 <?php
 echo $OUTPUT->footer();

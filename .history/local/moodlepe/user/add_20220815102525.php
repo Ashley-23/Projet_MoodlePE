@@ -332,16 +332,9 @@ echo $OUTPUT->header();
 
 
 
+<!--  -->
 
 
-
-
-
-
-
-
-
-<!-- ************************************************* RETOUR A LA PAGE D'ACCUEIL ( LISTE ) ************************************** -->
 
 <!-- *********************************** RESTAURER UN UTILISATEUR EXISTANT****************************************** -->
 <!-- <form action="/moodlepe/local/moodlepe/user/add.php"> -->
@@ -359,7 +352,7 @@ echo $OUTPUT->header();
                         btn-primary
                         
                     
-                    " name="submitbutton" id="id_submitbutton" value="Retourner à la page d'accueil" data-initial-value="Retourner à la page d'accueil">
+                    " name="submitbutton" id="id_submitbutton" value="Restaurer un utilisateur" data-initial-value="Créer utilisateur">
                     </span>
                     <div class="form-control-feedback invalid-feedback" id="id_error_submitbutton">
 
@@ -374,8 +367,6 @@ echo $OUTPUT->header();
 </form>
 <!-- *********************************** FIN RESTAURER UN UTILISATEUR EXISTANT****************************************** -->
 
-
-<!-- ************************************************* RETOUR A LA PAGE D'ACCUEIL ( LISTE ) ************************************** -->
 
 <?php
 echo $OUTPUT->footer();

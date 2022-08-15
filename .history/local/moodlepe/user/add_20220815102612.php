@@ -359,7 +359,7 @@ echo $OUTPUT->header();
                         btn-primary
                         
                     
-                    " name="submitbutton" id="id_submitbutton" value="Retourner à la page d'accueil" data-initial-value="Retourner à la page d'accueil">
+                    " name="submitbutton" id="id_submitbutton" value="Restaurer un utilisateur" data-initial-value="Créer utilisateur">
                     </span>
                     <div class="form-control-feedback invalid-feedback" id="id_error_submitbutton">
 
